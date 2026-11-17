@@ -2,165 +2,129 @@ cli mode, Current OrcaSlicer Version 2.4.0-beta
 Will start to read model file now, file count :1
 allow_multicolor_oneplate 1, allow_rotations 1 skip_modified_gcodes 0 avoid_extrusion_cali_region 0 loaded_filament_ids size 0, clone_objects size 0, skip_useless_pick 0, allow_newer_file 0, allow_mix_temp 0
 plate_to_slice=0, normative_check=1, use_first_fila_as_default=0
-read model file:C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\project.3mf
-model 00000084A3322980, id 3, backup_path empty, set to C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3
-create /3D/Objects in "C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3"
-create /Metadata in "C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3"
-create /lock.txt in "C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3"
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1698import 3mf IMPORT_STAGE_OPEN, m_load_restore=0
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1734import 3mf IMPORT_STAGE_READ_FILES
-load_3mf found metadata key = Application, value = BambuStudio-02.06.00.51
-load_3mf found metadata key = OrcaSlicer, value = 2.4.0-beta
-load_3mf found metadata key = BambuStudio:3mfVersion, value = 1
-load_3mf found metadata key = Copyright, value = 
-load_3mf found metadata key = CreationDate, value = 
-load_3mf found metadata key = Description, value = 
-load_3mf found metadata key = Designer, value = 
-load_3mf found metadata key = DesignerCover, value = 
-load_3mf found metadata key = DesignerUserId, value = 
-load_3mf found metadata key = License, value = 
-load_3mf found metadata key = ModificationDate, value = 
-load_3mf found metadata key = Origin, value = 
-load_3mf found metadata key = Title, value = 
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 1th file [Content_Types].xml, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1990, [Content_Types].xml skipped, already parsed or a directory or not supported
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 2th file Metadata/plate_1.json, total=10
-Slic3r::_BBS_3MF_Importer::_extract_file_from_archive, extract  "C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3/Metadata/plate_1.json" from 3mf Metadata/plate_1.json, ret 1
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 3th file 3D/3dmodel.model, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1990, 3D/3dmodel.model skipped, already parsed or a directory or not supported
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 4th file 3D/_rels/3dmodel.model.rels, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1990, 3D/_rels/3dmodel.model.rels skipped, already parsed or a directory or not supported
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 5th file 3D/Objects/challenge.stl_1.model, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1990, 3D/Objects/challenge.stl_1.model skipped, already parsed or a directory or not supported
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 6th file Metadata/project_settings.config, total=10
-Slic3r::_BBS_3MF_Importer::_extract_project_config_from_archive, extract  C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3/_temp_3.config from 3mf Metadata/project_settings.config, ret 1
-Slic3r::_BBS_3MF_Importer::_extract_project_config_from_archive, load project config file successfully from C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3/_temp_3.config
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 7th file Metadata/_rels/model_settings.config.rels, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1990, Metadata/_rels/model_settings.config.rels skipped, already parsed or a directory or not supported
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 8th file Metadata/model_settings.config, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 9th file Metadata/filament_sequence.json, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1885extract 10th file _rels/.rels, total=10
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:1990, _rels/.rels skipped, already parsed or a directory or not supported
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:2042, process group colors, size 0
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:2057, begin to assemble objects, size 1
-Slic3r::_BBS_3MF_Importer::_generate_volumes_new: line 4957, subobject_id 1, shared_mesh_id 1
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:2257import 3mf IMPORT_STAGE_LOADING_PLATES, m_plater_data size 1, m_backup_path C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:2308, plate 1, thumbnail_file=, no_light_thumbnail_file=
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:2309, top_thumbnail_file=, pick_thumbnail_file=
-Slic3r::_BBS_3MF_Importer::_load_model_from_file:2366import 3mf IMPORT_STAGE_FINISH
-the first file is a 3mf, version 2.4.0.0-beta, got plate count 1
-current_printer_name Bambu Lab P1S 0.4 nozzle, current_process_name 0.20mm Standard @BBL X1C
-inherits of printer is null, should be system preset
-inherits of process is null, should be system preset
-old printable size from 3mf: {256, 256, 250}
-old extruder_clearance_height_to_rod 34, extruder_clearance_height_to_lid 90, extruder_clearance_radius 68}
-Slic3r::CLI::run:before load settings, file count=0
-Slic3r::CLI::run:2523, can not find system preset file: C:\Program Files\OrcaSlicer\resources/profiles/BBL/machine_full/Bambu Lab P1S 0.4 nozzle.json 
-Slic3r::CLI::run:2545, can not find system preset file: C:\Program Files\OrcaSlicer\resources/profiles/BBL/process_full/0.20mm Standard @BBL X1C.json 
-current printer Bambu Lab P1S 0.4 nozzle, new printer , current process 0.20mm Standard @BBL X1C, new process 
-current printer inherits Bambu Lab P1S 0.4 nozzle, new printer inherits , current process inherits 0.20mm Standard @BBL X1C, new process inherits 
-index 0, current print compatible printer Bambu Lab P1S 0.4 nozzle
-index 0, upward_compatible_printers Bambu Lab P1P 0.4 nozzle
-index 1, upward_compatible_printers Bambu Lab X1 0.4 nozzle
-index 2, upward_compatible_printers Bambu Lab X1 Carbon 0.4 nozzle
-index 3, upward_compatible_printers Bambu Lab X1E 0.4 nozzle
-index 4, upward_compatible_printers Bambu Lab A1 0.4 nozzle
-index 5, upward_compatible_printers Bambu Lab H2D 0.4 nozzle
-index 6, upward_compatible_printers Bambu Lab H2D Pro 0.4 nozzle
-index 7, upward_compatible_printers Bambu Lab H2S 0.4 nozzle
-index 8, upward_compatible_printers Bambu Lab P2S 0.4 nozzle
-old printer Bambu Lab P1S 0.4 nozzle, inherited from Bambu Lab P1S 0.4 nozzle, old process 0.20mm Standard @BBL X1C, inherited from 0.20mm Standard @BBL X1C ,compatible 1
+read model file:C:\Users\David\AppData\Local\Temp\claude\c--Users-David-Documents-Local-Projects-AERODACTYL\01cc0d7a-a8c9-47e3-9ab5-07f948f57db8\scratchpad\h2d_raw\raw.stl
+object raw.stl, id :5, from stl or other 3mf
+Slic3r::CLI::run:before load settings, file count=2
+Slic3r::CLI::run::<lambda_e4e3d71a1f1ff4e2a068f554347fe46d>::operator ():load setting file C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\machine.json, with rule 1
+no substitutions performed from file C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\machine.json
+loaded machine config C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\machine.json, type Bambu Lab H2D 0.4 nozzle, name system, inherits Bambu Lab H2D 0.4 nozzle, printer_model_id 
+Slic3r::CLI::run::<lambda_e4e3d71a1f1ff4e2a068f554347fe46d>::operator ():load setting file C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\process.json, with rule 1
+no substitutions performed from file C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\process.json
+loaded process config C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\process.json, type 0.20mm Standard @BBL H2D, name system, inherits 0.20mm Standard @BBL H2D
+Slic3r::CLI::run::<lambda_e4e3d71a1f1ff4e2a068f554347fe46d>::operator ():load setting file C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\filament.json, with rule 1
+no substitutions performed from file C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\filament.json
+loaded filament 1 from file C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\filament.json, type system, name Bambu PLA Basic @BBL H2D, inherits 
+current printer , new printer Bambu Lab H2D 0.4 nozzle, current process , new process 0.20mm Standard @BBL H2D
+current printer inherits , new printer inherits Bambu Lab H2D 0.4 nozzle, current process inherits , new process inherits 0.20mm Standard @BBL H2D
+index 0, new print compatible printer Bambu Lab H2D 0.4 nozzle
+new printer Bambu Lab H2D 0.4 nozzle, inherited from Bambu Lab H2D 0.4 nozzle, new process 0.20mm Standard @BBL H2D, inherited from 0.20mm Standard @BBL H2D ,compatible 1
+update printer config to newest, different size 0, different_settings: 
+update_full_config: config keys count 96
+load a new printer, update all the keys, different_settings: 
+check printer cli safe params, current_printer_name , new_printer_name Bambu Lab H2D 0.4 nozzle, printer_model Bambu Lab H2D
+line 2877 , will parse file C:\Program Files\OrcaSlicer\resources/profiles/BBL/cli_config.json
+can not find machine_limits for printer Bambu Lab H2D in cli_config.json
+update process config to newest, different size 0, different_settings: 
+update_full_config: config keys count 136
+load a new process, update all the keys, different_settings: 
+update filament 1's config to newest, different size 0, name Bambu PLA Basic @BBL H2D, different_settings 
+skip scalar option inherits from filament 1: Bambu PLA Basic @BBL H2D
 no filament colors found in projects
 total 1 models, 0 objects
 3657, remove_wrapping_detect 0, old value 0
-old printable size {256, 256, 250}, new printable size {256, 256, 250}, extract the same, no need shrink
-translate_old 0, shrink_to_new_bed 0, old bed size {256, 256, 250}
+Line 3764: shared_printable_size {300, 320, 320}, shared_center {175, 160}
+translate_old 0, shrink_to_new_bed 0, old bed size {350, 320, 325}
 Slic3r::GUI::PartPlateList::reset_size:before size: plate_width 0, plate_depth 0, plate_height 0
-Slic3r::GUI::PartPlateList::reset_size:after size: plate_width 256, plate_depth 256, plate_height 250
+Slic3r::GUI::PartPlateList::reset_size:after size: plate_width 350, plate_depth 320, plate_height 325
 Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
-Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 250
+Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 350, plate_depth 320, plate_height 325
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
 Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 1, before, origin {0,0,0}, plate_width 0, plate_depth 0, plate_height 0
-Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 250
+Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {420,0,0}, plate_width 350, plate_depth 320, plate_height 325
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
-Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
+will start transforms, commands count 1
+process transform arrange
+finished model pre-process commands
+before arrange, need_arrange=1, duplicate_count 0, filament_color_changed 0
+Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":1,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":47.400002,"clearance_height_to_lid":201.000000,"clearance_radius":96.000000,"printable_height":325.000000,
+arrange: items selected before arranging: 1
+arrange: items unselected before arranging: 0
+start 1 th arranging...
+finished 1 th arranging...
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
-Slic3r::GUI::PartPlateList::set_filament_count: filament_count=1
-Slic3r::GUI::PartPlateList::update_plate_cols:m_plate_count 1, m_plate_cols change to 1
-Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 0, before, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 250
-Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {0,0,0}, plate_width 256, plate_depth 256, plate_height 250
-Slic3r::GUI::PartPlate::set_pos_and_size: plate_id 1, before, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 250
-Slic3r::GUI::PartPlate::set_pos_and_size: with_instance_move 0, after, origin {307.2,0,0}, plate_width 256, plate_depth 256, plate_height 250
-PartPlate same shape, skip directly
-Slic3r::GUI::PartPlateList::load_from_3mf_structure: plate 0, gcode_file C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3/Metadata/plate_1.gcode, is_sliced_valid 0, toolpath_outside 0, is_support_used 0 is_label_object_enabled 0
+Slic3r::GUI::PartPlateList::rebuild_plates_after_arrangement:before rebuild, plates count 1, recycle_plates 1
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
 Slic3r::GUI::PartPlate::add_instance: plate 0 , m_ready_for_slice changes to 1
-plate 1, object bbox: min {118, 123, 0} - max {138, 133, 15}
-filaments_cnt=1, set to no wipe tower
-plate 1,  has_wipe_tower 0, wipe_x 0, wipe_y 0, width 0, depth 0
-will start transforms, commands count 0
-finished model pre-process commands
-before arrange, need_arrange=0, duplicate_count 0, filament_color_changed 0
+Slic3r::GUI::PartPlateList::rebuild_plates_after_arrangement:after rebuild, plates count 1
 Need to slice for plate 0, total plate count 1 partplates!
 Plate 1: pre_check 1, start
-Slic3r::Model::update_print_volume_state, print_volume {0, 0, 0} to {256, 256, 250}, got 1 printable istances
+Slic3r::Model::update_print_volume_state, print_volume {0, 0, 0} to {350, 320, 325}, got 1 printable istances
+5855 :filament map mode is 0 
 plate 1: load cached data success, go on.
 Slic3r::Print::apply, Line 1120: enter
 Slic3r::Print::apply, has_scarf_joint_seam:false
 Slic3r::DynamicPrintConfig::update_values_to_printer_extruders, Line 9618: different extruders processing
 Slic3r::DynamicPrintConfig::update_values_to_printer_extruders, Line 9618: different extruders processing
 Slic3r::DynamicPrintConfig::update_values_to_printer_extruders, Line 9618: different extruders processing
-Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9789:  extruder_count=1, different_extruder=1
+Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9789:  extruder_count=2, different_extruder=1
 Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9895: option filament_retract_lift_above not found, skipping
 Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9895: option filament_retract_lift_below not found, skipping
 Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9979: option filament_retract_lift_enforce not found, skipping
-Slic3r::Print::apply, got print_diff 98, object_diff 18, region_diff 29, set status to APPLY_STATUS_CHANGED
+Slic3r::Print::apply, got print_diff 119, object_diff 18, region_diff 31, set status to APPLY_STATUS_CHANGED
 Slic3r::Print::apply 1260: found full_config_diff changed.
 Slic3r::Print::apply 1590: found print object changed.
 Slic3r::Print::apply, got new_changed_keys, size=1
 Slic3r::Print::apply, i=0, key=enable_prime_tower
-Slic3r::Print::apply 1787: finished,  this 000001DED60E7670, m_modified_count 1, apply_status 1, m_support_used 0
+Slic3r::Print::apply 1787: finished,  this 0000017DFD24E160, m_modified_count 1, apply_status 1, m_support_used 0
 set no_check to 0:
-printer_model_string: Bambu Lab P1S, is_bbl_vendor_preset 1
+printer_model_string: Bambu Lab H2D, is_bbl_vendor_preset 1
 start Print::process for partplate 1
 set print's callback to default_status_callback.
-Slic3r::Print::process: this=000001DED60E7670, enter, use_cache=0, object size=1
+Slic3r::Print::process: this=0000017DFD24E160, enter, use_cache=0, object size=1
 Slic3r::Print::process: total object counts 1 in current print, need to slice 1
 Starting the slicing process. WorkingSet: 77MB; PrivateBytes: 65MB; Pagefile(peak): 65MB(65MB)
 Slicing volumes... WorkingSet: 77MB; PrivateBytes: 65MB; Pagefile(peak): 65MB(65MB)
 Make overhang printable...
 angle 0.959931 maxHoleArea 0 tan_angle 1.42815
 layer_thickness 0.2 max_dist_from_lower_layer 0.28563
-Generating walls... WorkingSet: 83MB; PrivateBytes: 87MB; Pagefile(peak): 87MB(87MB)
-Detecting solid surfaces... WorkingSet: 85MB; PrivateBytes: 88MB; Pagefile(peak): 88MB(88MB)
-Preparing fill surfaces... WorkingSet: 86MB; PrivateBytes: 88MB; Pagefile(peak): 88MB(88MB)
-Discovering vertical shells... WorkingSet: 86MB; PrivateBytes: 88MB; Pagefile(peak): 88MB(88MB)
-Processing external surfaces... WorkingSet: 86MB; PrivateBytes: 88MB; Pagefile(peak): 88MB(88MB)
-Bridge over infill - Start WorkingSet: 87MB; PrivateBytes: 88MB; Pagefile(peak): 88MB(88MB)
-Bridge over infill - Directions and expanded surfaces computed WorkingSet: 87MB; PrivateBytes: 88MB; Pagefile(peak): 88MB(88MB)
-Bridge over infill - End WorkingSet: 87MB; PrivateBytes: 88MB; Pagefile(peak): 88MB(88MB)
+Generating walls... WorkingSet: 83MB; PrivateBytes: 83MB; Pagefile(peak): 83MB(83MB)
+Detecting solid surfaces... WorkingSet: 85MB; PrivateBytes: 84MB; Pagefile(peak): 84MB(84MB)
+Preparing fill surfaces... WorkingSet: 86MB; PrivateBytes: 84MB; Pagefile(peak): 84MB(84MB)
+Discovering vertical shells... WorkingSet: 86MB; PrivateBytes: 84MB; Pagefile(peak): 84MB(84MB)
+Processing external surfaces... WorkingSet: 86MB; PrivateBytes: 84MB; Pagefile(peak): 84MB(84MB)
+Bridge over infill - Start WorkingSet: 87MB; PrivateBytes: 84MB; Pagefile(peak): 84MB(84MB)
+Bridge over infill - Directions and expanded surfaces computed WorkingSet: 87MB; PrivateBytes: 84MB; Pagefile(peak): 84MB(84MB)
+Bridge over infill - End WorkingSet: 87MB; PrivateBytes: 84MB; Pagefile(peak): 84MB(84MB)
 max_cantilever_dist=0
 is_support_necessary takes 0 secs.
+Slic3r::Print::update_filament_maps_to_config: filament maps changed after pre-slicing.
+Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9789:  extruder_count=2, different_extruder=1
+Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9895: option filament_retract_lift_above not found, skipping
+Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9895: option filament_retract_lift_below not found, skipping
+Slic3r::DynamicPrintConfig::update_values_to_printer_extruders_for_multiple_filaments, Line 9979: option filament_retract_lift_enforce not found, skipping
 gcode path conflicts check takes 0 secs.
-Slicing process finished. WorkingSet: 92MB; PrivateBytes: 92MB; Pagefile(peak): 92MB(92MB)
+Slicing process finished. WorkingSet: 94MB; PrivateBytes: 90MB; Pagefile(peak): 90MB(90MB)
 print::process: first time_using_cache is 0 secs.
-process finished, will export gcode temporarily to C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/plate_1.gcode
-Slic3r::GCodeProcessorResult::reset 1619: this=00000084A33225C0 reset finished
-Will export G-code to C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/plate_1.gcode soon
-Exporting G-code... WorkingSet: 92MB; PrivateBytes: 92MB; Pagefile(peak): 92MB(92MB)
-Slic3r::GCodeProcessorResult::reset 1619: this=00000084A33225C0 reset finished
-rename_file from C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/plate_1.gcode.tmp to C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/plate_1.gcode successfully
-Exporting G-code finished WorkingSet: 99MB; PrivateBytes: 97MB; Pagefile(peak): 97MB(97MB)
+process finished, will export gcode temporarily to C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/plate_1.gcode
+Slic3r::GCodeProcessorResult::reset 1619: this=0000005102CC2890 reset finished
+Will export G-code to C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/plate_1.gcode soon
+Exporting G-code... WorkingSet: 94MB; PrivateBytes: 90MB; Pagefile(peak): 90MB(90MB)
+Slic3r::GCodeProcessorResult::reset 1619: this=0000005102CC2890 reset finished
+Invalid T command (T1001).
+Invalid T command (T65535).
+Invalid T command (T65279).
+rename_file from C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/plate_1.gcode.tmp to C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/plate_1.gcode successfully
+Exporting G-code finished WorkingSet: 101MB; PrivateBytes: 95MB; Pagefile(peak): 95MB(95MB)
 export_gcode finished: time_using_cache update to 0 secs.
-Slicing result exported to C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/plate_1.gcode
+Slicing result exported to C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/plate_1.gcode
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 1
 Slic3r::GUI::PartPlateList::store_to_3mf_structure: plate 1 before load, width 0, height 0, size 0!
 Slic3r::GUI::PartPlateList::store_to_3mf_structure: plate 1 after load, width 0, height 0, size 0!
-Slic3r::GUI::PartPlateList::store_to_3mf_structure: plate 0, gcode_filename=C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/plate_1.gcode, with_slice_info=1, slice_valid 1, object item count 1.
+Slic3r::GUI::PartPlateList::store_to_3mf_structure: plate 0, gcode_filename=C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/plate_1.gcode, with_slice_info=1, slice_valid 1, object item count 1.
 Slic3r::GUI::PartPlateList::store_to_3mf_structure:stored 1 plates!
 thumbnails stage: plate 1's thumbnail data is invalid, check the file  exist or not
 thumbnails stage: plate 1's thumbnail file also not there, need to regenerate
@@ -172,7 +136,7 @@ error_code 65540, description: Invalid OpenGL version 3.4
 Failed to create GLFW window; skipping thumbnail rendering for CLI export
 OpenGL context unavailable; skip thumbnail generating
 plate 1 bed type: Cool Plate, set from global
-will export 3mf to C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/sliced.3mf
+will export 3mf to C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/sliced.3mf
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6049,before open zip writer, m_skip_static 0, m_save_gcode 1, m_use_loaded_id 1
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6077, before add _add_content_types_file_to_archive
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6091,before add thumbnails, count 0
@@ -180,7 +144,7 @@ Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6092,top&&pick thumbnails, count 
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6230,before add calibration thumbnails, count 0
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6252,before add calibration boundingbox, count 1
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6268, before add models
-Slic3r::_BBS_3MF_Exporter::_add_model_file_to_archive:6741, filename C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/sliced.3mf.tmp, m_split_model 1,  sub_model 0
+Slic3r::_BBS_3MF_Exporter::_add_model_file_to_archive:6741, filename C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/sliced.3mf.tmp, m_split_model 1,  sub_model 0
 bbs_3mf: save key= Application, value = BambuStudio-02.06.00.51
 bbs_3mf: save key= BambuStudio:3mfVersion, value = 1
 bbs_3mf: save key= Copyright, value = 
@@ -191,29 +155,30 @@ bbs_3mf: save key= DesignerCover, value =
 bbs_3mf: save key= DesignerUserId, value = 
 bbs_3mf: save key= License, value = 
 bbs_3mf: save key= ModificationDate, value = 
-bbs_3mf: save key= OrcaSlicer, value = 2.4.0-beta
 bbs_3mf: save key= Origin, value = 
-bbs_3mf: save key= Thumbnail_Middle, value = /Metadata/plate_1.png
-bbs_3mf: save key= Thumbnail_Small, value = /Metadata/plate_1_small.png
 bbs_3mf: save key= Title, value = 
-Slic3r::_BBS_3MF_Exporter::_add_model_file_to_archive:6741, filename 3D/Objects/challenge.stl_1.model, m_split_model 1,  sub_model 1
+Slic3r::_BBS_3MF_Exporter::_add_model_file_to_archive:6741, filename 3D/Objects/raw.stl_1.model, m_split_model 1,  sub_model 1
 bbs_3mf: save key= BambuStudio:3mfVersion, value = 1
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6331, before add custom gcodes
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6342, before add project_settings
-Slic3r::ConfigBase::save_to_json:1504, saved config to C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3/_temp_1.config
-Slic3r::_BBS_3MF_Exporter::_add_file_to_archive:6516, add file C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3/_temp_1.config to archive Metadata/project_settings.config
+model 0000017DF8D7E4E0, id 3, backup_path empty, set to C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3
+create /3D/Objects in "C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3"
+create /Metadata in "C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3"
+create /lock.txt in "C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3"
+Slic3r::ConfigBase::save_to_json:1504, saved config to C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3/_temp_1.config
+Slic3r::_BBS_3MF_Exporter::_add_file_to_archive:6516, add file C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3/_temp_1.config to archive Metadata/project_settings.config
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6357, before add project embedded settings
-Slic3r::_BBS_3MF_Exporter::_add_gcode_file_to_archive::<lambda_e5c632825af285b7a3c41bae4c466fa1>::operator ():8408, store  C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/plate_1.gcode to 3mf Metadata/plate_1.gcode
+Slic3r::_BBS_3MF_Exporter::_add_gcode_file_to_archive::<lambda_e5c632825af285b7a3c41bae4c466fa1>::operator ():8408, store  C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/plate_1.gcode to 3mf Metadata/plate_1.gcode
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6432, before add sliced info to 3mf
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6452, before add auxiliary dir to 3mf
-create missing sub_pathC:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3/Auxiliaries
+create missing sub_pathC:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3/Auxiliaries
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6465, before add relation file to 3mf
 Slic3r::_BBS_3MF_Exporter::_save_model_to_file:6487, finished exporting 3mf
-Project exported to C:\Users\David\AppData\Local\Temp\brickify_xfsa8qcx\orca_out/sliced.3mf
-Slic3r::Model::remove_backup_path_if_existmodel 000001DED1CE4130, id 3 remove backup_path C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/21_10_48#38744#3
+Project exported to C:\Users\David\AppData\Local\Temp\brickify_cjqqg5bt\orca_out/sliced.3mf
+Slic3r::Model::remove_backup_path_if_existmodel 0000017DF8D7E4E0, id 3 remove backup_path C:\Users\David\AppData\Local\Temp/orcaslicer_model/Mon_Nov_16/22_37_44#43844#3
 Slic3r::CLI::run, Finished
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 1 to 0
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 0 , update slice result from 0 to 0
-Slic3r::PrintObject::~PrintObject: this=000001DED6172570, m_shared_object 0000000000000000
+Slic3r::PrintObject::~PrintObject: this=0000017DFD2FF320, m_shared_object 0000000000000000
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0
 Slic3r::GUI::PartPlate::update_slice_result_valid_state: plate 1 , update slice result from 0 to 0

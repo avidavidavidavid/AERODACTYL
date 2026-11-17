@@ -39,9 +39,11 @@ import zipfile
 from pathlib import Path
 
 # ---- Where things live (environment variables override these) ----
+# bricklayers.py is found relative to this project, so moving the folder doesn't break it.
+PROJECT_DIR = Path(__file__).resolve().parent.parent
 BRICKLAYERS_PY = Path(os.environ.get(
     "BRICKLAYERS_PY",
-    r"C:\Users\David\Documents\Local Projects\PLANT\Bricklayers Post Processing Script\BrickLayers Repo\bricklayers.py"))
+    PROJECT_DIR / "Bricklayers Post Processing Script" / "BrickLayers Repo" / "bricklayers.py"))
 ORCA_EXE = Path(os.environ.get("ORCA_EXE", r"C:\Program Files\OrcaSlicer\orca-slicer.exe"))
 ORCA_DATA = Path(os.environ.get("APPDATA", "")) / "OrcaSlicer"
 ORCA_PROFILES = ORCA_EXE.parent / "resources" / "profiles"
@@ -62,6 +64,14 @@ PRINTERS = {
         "filament": "Bambu PLA Basic @BBL A1M",
         "vendor": "BBL",
         "filament_tag": "@BBL A1M",
+        "output": "3mf",
+    },
+    "h2d": {
+        "machine": "Bambu Lab H2D 0.4 nozzle",
+        "process": "0.20mm Standard @BBL H2D",
+        "filament": "Bambu PLA Basic @BBL H2D",
+        "vendor": "BBL",
+        "filament_tag": "@BBL H2D",
         "output": "3mf",
     },
     "qidi": {
