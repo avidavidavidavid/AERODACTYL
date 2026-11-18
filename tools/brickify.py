@@ -257,7 +257,7 @@ def orca_slice(model, args, tmp):
         raise BrickifyError(f"OrcaSlicer not found at {ORCA_EXE}")
     printer = PRINTERS[args.printer]
     outdir = tmp / "orca_out"
-    outdir.mkdir()
+    outdir.mkdir(exist_ok=True)
     cmd = [str(ORCA_EXE)]
 
     if model.suffix.lower() == ".3mf" and "Metadata/project_settings.config" in zip_names(model):
@@ -282,14 +282,17 @@ def orca_slice(model, args, tmp):
         say("settings: " + ", ".join(changes))
     if args.orient:
         cmd += ["--orient", "1"]
-    cmd += ["--slice", "0", "--outputdir", str(outdir), "--export-3mf", "sliced.3mf", str(model)]
+    cmd += ["--slice", "0", "--outputdir", str(outdir), "--export-3mf", "sliced.3mf", str(Path(model).resolve())]
 
-    proc = subprocess.run(cmd, capture_output=True, text=True, errors="replace", timeout=1800)
+    # Run from the temp folder: Orca's command line drops a 00000.log in its working folder.
+    proc = subprocess.run(cmd, capture_output=True, text=True, errors="replace", timeout=1800, cwd=tmp)
     code = proc.returncode - (1 << 32) if proc.returncode >= (1 << 31) else proc.returncode
     sliced = outdir / "sliced.3mf"
     if code != 0 or not sliced.is_file() or "Metadata/plate_1.gcode" not in zip_names(sliced):
         detail = (proc.stderr or "").strip().splitlines()[-1:] or [""]
-        raise BrickifyError(f"OrcaSlicer failed ({ORCA_ERRORS.get(code, f'exit code {code}')}) {detail[0]}".strip())
+        err = BrickifyError(f"OrcaSlicer failed ({ORCA_ERRORS.get(code, f'exit code {code}')}) {detail[0]}".strip())
+        err.code = code
+        raise err
     return sliced
 
 
@@ -476,10 +479,23 @@ def process(path, args):
             outputs = [expected] if status == "done" else []
         else:
             source = path
+            reoriented = False
             if kind == "model":
                 model = step_to_stl(path, tmp) if path.suffix.lower() in (".step", ".stp") else path
-                source = orca_slice(model, args, tmp)
+                try:
+                    source = orca_slice(model, args, tmp)
+                except BrickifyError as e:
+                    # Usual cause: in its CAD orientation the part only touches the bed at a
+                    # point or edge, so the first layer is empty. Let Orca pick a flat face.
+                    if getattr(e, "code", None) != -100 or args.orient:
+                        raise
+                    say("slicing failed as exported (part probably doesn't sit flat); retrying with auto-orient")
+                    source = orca_slice(model, argparse.Namespace(**{**vars(args), "orient": True}), tmp)
+                    reoriented = True
             status, outputs, warnings = brick_3mf(source, out_dir, stem, out_format, args)
+            if reoriented:
+                warnings.append("auto-oriented by OrcaSlicer: check the orientation before printing "
+                                "(it affects strength), or orient it yourself and drop a 3MF")
 
     if status == "already":
         say("already BrickLayers-processed, nothing to do")
