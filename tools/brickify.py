@@ -278,6 +278,10 @@ def orca_slice(model, args, tmp):
         cmd += ["--load-settings", f"{files['machine']};{files['process']}",
                 "--load-filaments", str(files["filament"]),
                 "--arrange", "1"]
+        # Orca defaults to the Cool Plate, which refuses hot filaments like ASA.
+        if str(data.get("cool_plate_temp", ["35"])[0]) == "0":
+            cmd += ["--curr-bed-type", "High Temp Plate"]
+            say("bed: High Temp Plate (this filament can't use the Cool Plate)")
     if changes:
         say("settings: " + ", ".join(changes))
     if args.orient:
